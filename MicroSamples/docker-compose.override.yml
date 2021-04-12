@@ -8,8 +8,8 @@ services:
       - ASPNETCORE_HTTPS_PORT=44301
       - DB_CONNECTION=Server=server-mssql;database=UserManagement;user=test;password=test;
     ports:
-      - "60001:80"
-      - "44301:443"
+      - "10001:80"
+      - "44201:443"
     volumes:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
 
@@ -20,7 +20,7 @@ services:
       - ASPNETCORE_HTTPS_PORT=44302
       - DB_CONNECTION=Server=server-mssql;database=ProductManagement;user=test;password=test;
     ports:
-      - "60002:80"
-      - "44302:443"
+      - "10002:80"
+      - "44202:443"
     volumes:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

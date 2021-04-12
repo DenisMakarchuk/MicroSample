@@ -15,3 +15,5 @@ services:
 
   server-mssql:
     image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
