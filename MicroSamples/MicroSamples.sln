@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Data", "ProductManagement.Data\ProductManagement.Data.csproj", "{AA419BA5-D0ED-4041-83FD-10E2252D822D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Constants", "Common.Constants\Common.Constants.csproj", "{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Constants", "Common.Constants\Common.Constants.csproj", "{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Extensions", "Common.Extensions\Common.Extensions.csproj", "{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Extensions", "Common.Extensions\Common.Extensions.csproj", "{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{12A8DF99-3EB9-4F14-899C-318566F7CA0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A8DF99-3EB9-4F14-899C-318566F7CA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A8DF99-3EB9-4F14-899C-318566F7CA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A8DF99-3EB9-4F14-899C-318566F7CA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A8DF99-3EB9-4F14-899C-318566F7CA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
