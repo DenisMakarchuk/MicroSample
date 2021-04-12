@@ -12,9 +12,7 @@ namespace UserManagement.Data
     public class IdentityContext : IdentityDbContext, IUserManagementContext
     {
         public IdentityContext(DbContextOptions options) : base(options)
-        {
-            Database.EnsureCreated();
-        }
+        {}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
