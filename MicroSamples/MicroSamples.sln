@@ -9,25 +9,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserManagement", "UserManag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductManagement", "ProductManagement", "{8048609E-A15B-4B44-8AA3-22EEAA262101}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Web", "UserManagement.Web\UserManagement.Web.csproj", "{DF3D125D-9032-455E-8DCE-8F405A8F5403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Web", "UserManagement.Web\UserManagement.Web.csproj", "{DF3D125D-9032-455E-8DCE-8F405A8F5403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Services", "UserManagement.Services\UserManagement.Services.csproj", "{A47D1C32-88E0-4E6F-AF30-9B9F114A9E13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Services", "UserManagement.Services\UserManagement.Services.csproj", "{A47D1C32-88E0-4E6F-AF30-9B9F114A9E13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Models", "UserManagement.Models\UserManagement.Models.csproj", "{F148F973-762A-4E56-A9F3-2C918D86C4C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Models", "UserManagement.Models\UserManagement.Models.csproj", "{F148F973-762A-4E56-A9F3-2C918D86C4C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Domain", "UserManagement.Domain\UserManagement.Domain.csproj", "{866E4E46-2C52-4B13-878D-7182FD98D3A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Domain", "UserManagement.Domain\UserManagement.Domain.csproj", "{866E4E46-2C52-4B13-878D-7182FD98D3A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Data", "UserManagement.Data\UserManagement.Data.csproj", "{377C9477-4FD6-4A4B-A1F4-16F1D54BABFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Data", "UserManagement.Data\UserManagement.Data.csproj", "{377C9477-4FD6-4A4B-A1F4-16F1D54BABFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Web", "ProductManagement.Web\ProductManagement.Web.csproj", "{13AB3C58-1313-452A-A5B6-F39E5AF83640}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Web", "ProductManagement.Web\ProductManagement.Web.csproj", "{13AB3C58-1313-452A-A5B6-F39E5AF83640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Services", "ProductManagement.Services\ProductManagement.Services.csproj", "{FAE1FA25-5763-416E-BF84-4E73DDE89CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Services", "ProductManagement.Services\ProductManagement.Services.csproj", "{FAE1FA25-5763-416E-BF84-4E73DDE89CB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Midels", "ProductManagement.Midels\ProductManagement.Midels.csproj", "{F6643180-A3A9-4AD7-8D30-2BE0F6D37086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Midels", "ProductManagement.Midels\ProductManagement.Midels.csproj", "{F6643180-A3A9-4AD7-8D30-2BE0F6D37086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Domain", "ProductManagement.Domain\ProductManagement.Domain.csproj", "{81EF2888-2A71-4836-B31C-A563F676466D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Domain", "ProductManagement.Domain\ProductManagement.Domain.csproj", "{81EF2888-2A71-4836-B31C-A563F676466D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Data", "ProductManagement.Data\ProductManagement.Data.csproj", "{AA419BA5-D0ED-4041-83FD-10E2252D822D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Data", "ProductManagement.Data\ProductManagement.Data.csproj", "{AA419BA5-D0ED-4041-83FD-10E2252D822D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Constants", "Common.Constants\Common.Constants.csproj", "{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Extensions", "Common.Extensions\Common.Extensions.csproj", "{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{AA419BA5-D0ED-4041-83FD-10E2252D822D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA419BA5-D0ED-4041-83FD-10E2252D822D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA419BA5-D0ED-4041-83FD-10E2252D822D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +102,8 @@ Global
 		{F6643180-A3A9-4AD7-8D30-2BE0F6D37086} = {8048609E-A15B-4B44-8AA3-22EEAA262101}
 		{81EF2888-2A71-4836-B31C-A563F676466D} = {8048609E-A15B-4B44-8AA3-22EEAA262101}
 		{AA419BA5-D0ED-4041-83FD-10E2252D822D} = {8048609E-A15B-4B44-8AA3-22EEAA262101}
+		{CDDB69BB-AA2D-47AF-B492-A6DDA3CBA687} = {4A7ABA14-73C1-4454-ABC5-E5F8767C306E}
+		{32574B65-F8E0-420A-BD2E-6E55A60A1B7C} = {4A7ABA14-73C1-4454-ABC5-E5F8767C306E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C26A1F3-5172-475B-BD25-9651D5EFE255}
