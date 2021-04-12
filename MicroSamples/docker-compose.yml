@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  usermanagement.web:
+    image: ${DOCKER_REGISTRY-}usermanagementweb
+    build:
+      context: .
+      dockerfile: UserManagement.Web/Dockerfile
+
+  productmanagement.web:
+    image: ${DOCKER_REGISTRY-}productmanagementweb
+    build:
+      context: .
+      dockerfile: ProductManagement.Web/Dockerfile
+
+  server-mssql:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y

@@ -10,12 +10,14 @@ namespace UserManagement.Web
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
         {
             Configuration = configuration;
+            WebHostEnvironment = webHostEnvironment;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment WebHostEnvironment { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -29,7 +31,7 @@ namespace UserManagement.Web
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "CQRS.WebApi",
+                    Title = WebHostEnvironment.ApplicationName,
                 });
             });
         }
@@ -42,7 +44,7 @@ namespace UserManagement.Web
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CQRS.WebApi");
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{env.ApplicationName}.v1");
                 });
             }
 
