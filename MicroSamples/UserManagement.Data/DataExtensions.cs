@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Common.Extensions;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,7 +11,10 @@ namespace UserManagement.Data
     {
         public static IServiceCollection AddDataServices(this IServiceCollection services, IConfiguration config)
         {
-            services.AddMicroserviceDbContext<IUserManagementContext, IdentityContext>(config.GetDbConnection());
+            services.AddSingleton(typeof(IDesignTimeDbContextFactory<IdentityContext>), typeof(DbContextFactory<IdentityContext>));
+
+            services.AddMicroserviceDbContext<IUserManagementContext, IdentityContext>(
+                config.GetDbConnection(typeof(IdentityContext).Name.Replace("Context", "")));
 
             services.AddIdentity<IdentityUser, IdentityRole>(opt =>
             {

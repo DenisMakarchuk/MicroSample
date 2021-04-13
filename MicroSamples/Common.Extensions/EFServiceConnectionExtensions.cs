@@ -11,7 +11,8 @@ namespace Microsoft.Extensions.DependencyInjection
 			where TContextImplementation : DbContext, TContextInterface
 		{
 			service.AddDbContext<TContextImplementation>(options =>
-				options.UseSqlServer(databaseConnection,
+				options.UseMySql(
+					databaseConnection,
 					b => b.MigrationsAssembly(typeof(TContextImplementation).Assembly.FullName)));
 
 			service.AddScoped<TContextInterface, TContextImplementation>();

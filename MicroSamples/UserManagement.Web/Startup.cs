@@ -1,10 +1,14 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System.Diagnostics;
+using System.Reflection;
 using UserManagement.Services;
+using UserManagement.Services.Users.Queries.GetRoles;
 
 namespace UserManagement.Web
 {
@@ -21,9 +25,10 @@ namespace UserManagement.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddManagersServices(Configuration);
             services.AddControllers();
-            //services.AddMediatR(typeof(SomeHandler).GetTypeInfo().Assembly);
+            services.AddManagersServices(Configuration);
+
+            services.AddMediatR(typeof(GetRolesCommandHandler).GetTypeInfo().Assembly);
             services.AddAutoMapper(typeof(Startup).Assembly);
 
             services.AddSwaggerGen(c =>

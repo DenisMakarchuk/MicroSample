@@ -13,7 +13,14 @@ services:
       context: .
       dockerfile: ProductManagement.Web/Dockerfile
 
-  server-mssql:
-    image: mcr.microsoft.com/mssql/server
+  server-mysql:
+    image: mysql
     environment:
-      - ACCEPT_EULA=Y
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_ROOT_PASSWORD=test
+    ports:
+      - "3306:3306"
+    volumes:
+      - c:/MicroSample/mysql:/var/lib/mysql
