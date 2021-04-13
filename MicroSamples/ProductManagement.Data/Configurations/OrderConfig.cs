@@ -13,6 +13,7 @@ namespace ProductManagement.Data.Configurations
             builder.Property(_ => _.Id).ValueGeneratedOnAdd();
 
             builder.Property(_ => _.Description).HasMaxLength(ValidationConstants.DescriptionMaxLength);
+            builder.HasMany(_ => _.Products);
 
             builder.HasQueryFilter(_ => _.DeletedDate == null);
         }

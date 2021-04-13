@@ -6,7 +6,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_HTTPS_PORT=44301
-      - DB_CONNECTION=Server=server-mssql;database=UserManagement;user=test;password=test;
+      - DB_CONNECTION=Server=server-mysql;database=Identity;user=root;password=test;
     ports:
       - "10001:80"
       - "44201:443"
@@ -18,7 +18,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_HTTPS_PORT=44302
-      - DB_CONNECTION=Server=server-mssql;database=ProductManagement;user=test;password=test;
+      - DB_CONNECTION=Server=server-mysql;database=ProductManagement;user=root;password=test;
     ports:
       - "10002:80"
       - "44202:443"
