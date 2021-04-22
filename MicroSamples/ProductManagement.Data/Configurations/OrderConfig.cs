@@ -1,4 +1,4 @@
-﻿using Common.Constants.ProductManagementConstants;
+﻿using Common.Constants.Global;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ProductManagement.Domain;
@@ -12,7 +12,7 @@ namespace ProductManagement.Data.Configurations
             builder.HasKey(_ => _.Id);
             builder.Property(_ => _.Id).ValueGeneratedOnAdd();
 
-            builder.Property(_ => _.Description).HasMaxLength(ValidationConstants.DescriptionMaxLength);
+            builder.Property(_ => _.Description).HasMaxLength(ValidationConstants.DESCRIPTION_MAX_LENGTH);
             builder.HasMany(_ => _.Products);
 
             builder.HasQueryFilter(_ => _.DeletedDate == null);

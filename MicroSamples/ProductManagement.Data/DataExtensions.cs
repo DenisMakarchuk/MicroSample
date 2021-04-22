@@ -13,7 +13,7 @@ namespace ProductManagement.Data
             services.AddSingleton(typeof(IDesignTimeDbContextFactory<ProductManagementContext>), typeof(DbContextFactory<ProductManagementContext>));
 
             services.AddMicroserviceDbContext<IProductManagementContext, ProductManagementContext>(
-                config.GetDbConnection(typeof(ProductManagementContext).Name.Replace("Context", "")));
+                config.GetDbConnection(typeof(ProductManagementContext)));
 
             return services;
         }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Common.Helpers.Global;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using System;
 
@@ -9,7 +10,7 @@ namespace Common.Extensions
         public TContextImplementation CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<TContextImplementation>();
-            optionsBuilder.UseMySql($"Server=localhost;database={typeof(TContextImplementation).Name.Replace("Context", "")};user=root;password=test;");
+            optionsBuilder.UseMySql($"Server=localhost;database={DbNameHelper.GetDbName(typeof(TContextImplementation))};user=root;password=test;");
             return (TContextImplementation)Activator.CreateInstance(typeof(TContextImplementation),optionsBuilder.Options);
         }
     }

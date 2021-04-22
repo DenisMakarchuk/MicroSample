@@ -14,7 +14,7 @@ namespace UserManagement.Data
             services.AddSingleton(typeof(IDesignTimeDbContextFactory<IdentityContext>), typeof(DbContextFactory<IdentityContext>));
 
             services.AddMicroserviceDbContext<IUserManagementContext, IdentityContext>(
-                config.GetDbConnection(typeof(IdentityContext).Name.Replace("Context", "")));
+                config.GetDbConnection(typeof(IdentityContext)));
 
             services.AddIdentity<IdentityUser, IdentityRole>(opt =>
             {
